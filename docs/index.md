@@ -6,16 +6,9 @@ hide:
 ---
 
 <style>
-    
-    body {
-        background-image: url('/assets/background.png');
-        background-blend-mode: difference;
-        background-size: contain;
-    }
-   
-    .md-header, 
+    .md-header,
     .md-tabs {
-        background-color: unset;
+        /* background-color: unset; */
     }
     .md-typeset .cover {
         display: none;
@@ -25,7 +18,7 @@ hide:
     }
     .md-typeset h1,
     .md-typeset h2 {
-        color: navy;
+        /* color: ; */
     }
     .md-typeset .cards .card {
         padding: 1em;
@@ -41,7 +34,7 @@ hide:
     }
 </style>
 
-# Digital Garden 🍃
+# Digital Garden
 
 👋 Hey there! I'm Shivanshu, a Computer Science undergrad.\
 I like to write articles on workflows, linux customizations, and programming tips.

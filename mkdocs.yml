@@ -1,4 +1,4 @@
-site_name: Digital garden 🍃
+site_name: Digital garden
 site_url: https://shivanshu-semwal.github.io/blog/ # must have the trailing slash
 site_author: Shivanshu Semwal (semwalshivanshu@gmail.com)
 site_description: Guides and articles on workflows, linux customizations, and programming tips.
@@ -13,15 +13,28 @@ theme:
   custom_dir: overrides
   # https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/
   palette:
-    primary: white
-    accent: deep orange
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
   # https://squidfunk.github.io/mkdocs-material/setup/changing-the-fonts/
   font:
+    text: Roboto
     code: Roboto Mono
   # https://squidfunk.github.io/mkdocs-material/setup/changing-the-logo-and-icons/
   icon:
-    logo: fontawesome/solid/code
-  favicon: fontawesome/solid/code
+    logo: fontawesome/solid/laptop-code
+  favicon: fontawesome/solid/laptop-code
 
   features:
     # Navigation

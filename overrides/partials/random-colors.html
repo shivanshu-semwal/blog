@@ -1,14 +1,12 @@
 {%- macro random_color() -%}
-{{- ["DarkRed",
-"DarkGoldenrod",
-"DarkGreen",
-"DarkOliveGreen",
-"DarkCyan",
-"DarkTurquoise",
-"DarkBlue",
-"DarkMagenta",
-"DarkViolet",
-"DarkSlateBlue",
-"DarkOrchid",
-"DarkSlateGray"] | random -}}
+{{- ["var(--md-tag-color1)",
+"var(--md-tag-color2)",
+"var(--md-tag-color3)",
+"var(--md-tag-color4)",
+"var(--md-tag-color5)",
+"var(--md-tag-color6)",
+"var(--md-tag-color7)",
+"var(--md-tag-color8)",
+"var(--md-tag-color9)",
+"var(--md-tag-color10)"] | random -}}
 {%- endmacro -%}

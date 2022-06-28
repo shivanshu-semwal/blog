@@ -6,7 +6,7 @@ tags:
     - shell
 ---
 
-`PowerShell` is new shell for windows and is cross platform shell.
+PowerShell is new shell for windows and is cross platform shell.
 
 Form [wikipedia](https://en.wikipedia.org/wiki/PowerShell)
 
