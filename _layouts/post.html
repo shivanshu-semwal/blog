@@ -26,7 +26,7 @@ layout: default
       {%- endif -%}
       <br>
       {%- for tag in page.tags -%}
-        <a href="{{ "/tags#" | append: tag | relative_url }}">#{{ tag }}</a>&nbsp;
+        <a href="{{ "/tags#" | append: tag }}">#{{ tag }}</a>&nbsp;
       {%- endfor -%}
     </p>
   </header>
