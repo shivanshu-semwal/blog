@@ -20,7 +20,7 @@ minima:
      - { platform: linkedin,       user_url: "https://www.linkedin.com/in/shivanshu-semwal" }
      - { platform: twitter,        user_url: "https://twitter.com/shivanshusemwal" }
   theme:
-    skin: auto
+    skin: dark 
 
 header_pages:
   - tags.md
