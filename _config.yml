@@ -23,7 +23,6 @@ minima:
 
 header_pages:
   - tags.md
-  - about.md
 
 paginate: 10
 paginate_path: "/blog/page:num/"
