@@ -1,6 +1,8 @@
 ---
 title: Some windows customizations to improve workflow
 layout: post
+tags:
+- windows
 ---
 
 ## `debloat_windows()`

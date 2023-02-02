@@ -1,6 +1,8 @@
 ---
 title: Extract canvas from webpage
 layout: post
+tags:
+- webdev
 ---
 
 Use this code snippet in developer mode to download canvas as an image.
