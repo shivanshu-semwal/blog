@@ -1,6 +1,10 @@
 ---
 title: How to use userscripts
 layout: post
+tags:
+    - webdev
+    - web
+description: How to use userscripts to do repetitive tasks.
 ---
 
 Userscripts, are uses to run javascript on top of a website to automate some repetitive task or add or remove elements, and many other tasks like scraping.
@@ -32,7 +36,7 @@ Now you can find and use userscripts form internet or create your own. Before in
 
 Creating your own userscript according to you usecase is much better, here are some examples.
 
-### remove youtube videos with certain words
+### Remove youtube videos with certain words
 
 ```js
 // ==UserScript==
@@ -105,7 +109,7 @@ Here the main part to focus is the `@match` option which defines for which url y
 - now you create a `MutationObserver`  and then observe the page for changes, by recursively calling the function.
 - inside the `main()` function you have to get the elements and based on a criteria set their `dispay` to `none`
 
-### remove post from certain subreddits
+### Remove post from reddit with certain subreddits
 
 This is useful when you are not logged in, also here we will use the old interface of reddit.
 

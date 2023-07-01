@@ -32,6 +32,15 @@ layout: default
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
+    {% capture tocOutput %}
+      {% include toc.html html=content %}
+    {% endcapture %}
+    {% assign tocStripOutput = tocOutput | strip_newlines | strip %}
+    {% if tocStripOutput != "" %}
+      <h3>Table of Contents</h3>
+      {{ tocOutput }}
+      <hr />
+    {% endif %}
     {{ content }}
   </div>
 

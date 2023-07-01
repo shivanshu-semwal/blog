@@ -34,6 +34,7 @@ layout: default
           <a href="{{ "/tags#" | append: tag | relative_url }}">#{{ tag }}</a>&nbsp;
           {%- endfor -%}
         </p>
+        {{ post.description }}
         {%- if site.show_excerpts -%}
           {{ post.excerpt }}
         {%- endif -%}

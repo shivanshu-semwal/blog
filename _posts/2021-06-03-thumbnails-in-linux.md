@@ -3,6 +3,7 @@ title: Thumbnails mystery in linux
 layout: post
 tags:
   - linux
+description: How to use custom thumbnailer in pcmanfm-qt file manager.
 ---
 
 Thumbnails are essential part of a file manager, especially if you have huge amount of images, and ebooks.
@@ -38,7 +39,7 @@ pdftoppm -png -singlefile -scale-to $1 "$2" "${out%".png"}"
 - give the file execute permission `chmod +x /usr/bin/pdftoppm-thumbnailer`
 - create file `/usr/share/thumbnailers/pdftoppm.thumbnailer`
 
-```
+```ini
 [Thumbnailer Entry]
 Exec=pdftoppm-thumbnailer %s %i %o
 MimeType=application/pdf;application/x-pdf;image/pdf;application/x-gzpostscript;application/postscript;

@@ -1,17 +1,20 @@
 ---
-title: Make minimal website
+title: Minimal websites - way of future!
 layout: post
 tags:
 - webdev
+description: Minimalism, a better way to present information.
 ---
 
 ## Introduction
 
 The aim of this article to make a minimal website, in which no unnecessary bloat is present.
-If you want to make a website whose sole aim is to provide information to other.
-You should follow principles of minimalism design.
+If you want to make a website whose sole aim is to provide information to other people
+you should consider following principles of minimalism design.
 
-## Principles
+You can watch this video <https://www.youtube.com/watch?v=ZQa0BajKB4Q> for a slight introduction.
+
+## Principles of minimalism design for web page
 
 Here are some things you should keep in mind while creating a web-page (or for any content):
 
@@ -19,55 +22,36 @@ Here are some things you should keep in mind while creating a web-page (or for a
   It improves user experience as it helps someone to find what they are looking for easily.
 - Don't include unnecessary image, text, quotes.
   Anything irrelevant should be removed.
-  Don't include images with big size, keep the size so that the image is clearly visible.
-  I see many blog post on medium with unnecessary images.
+  Don't include images with big file size, keep the file size so that the image is clearly visible.
+  I see many blog post on medium blog site with unnecessary images.
 - Don't use bad UI design, like centring and justifying text in paragraphs.
 - Don't include javascript if not needed.
+- If you want to include ads, limit there numbers and keep their position out of content.
+- Use HTML(hyper text markup language) semantic tags, don't fill webpage with `divs`.
+  You should use correct tags and validate html, this improves accessibility and improves structure of web page.
+  Here are some semantic tags you may need to use as a programmer:
+    - `<code>` inline code
+    - `<kbd>` keyboard input, some shortcut
+    - `<pre>` preformatted text, no space, tabs are ignores in it, and also no line spaces are ignored. Use this for code blocks.
+    - `<samp>` for output of a code, use this
 
-## Semantics
+These are basic and most important one.
 
-- Uae HTML(hyper text markup language) semantic tags, don't fill it with `divs`.
+## Why minimalism? - problem with modern web
 
-You should use correct tags and validate html,
-this improves accessibility and improves structure of web page.
+Here are some of problems with modern web which I often notice:
 
-- `<!-- use comments in html -->`
-- `<!DOCTYPE html>` type of document
-- `<a>` for links
-- `<article>` defines an article
-- `<b>` for bold
-- `<blockquote>` for quotes
-- `<br>` newline
-- `<code>` defines some code, use `monospace` font
-- `<details>` want summary and title, type content which can be collapsed
-- `<div>` divide page to make some layout and responsive, don't use too many divs
-- `<em>` emphasis
-- `<footer>`
-- `<h1>` to `<h6>`
+- Main content(what you visited the site for) don't have focus, it's covered all over with ad's.
+  You can have ad's and also have focus over content.
+- Useless java script for interactivity which no one needed, and it's often broken for some browsers.
+- Bad UI design and UX, no **text hierarchy**, **excessive use of emoji**,
+  unnecessary buttons, not enough spacing and padding, etc.
+- Bad logic in forms, not everyone have a last name, or middle name, etc.
+- Infinite scroll, please use pagination, or at least give a option for switching to it.
 
-How to write code in html:
+## Examples of some minimal websites
 
-- `<code>` inline code
-- `<kbd>` keyboard input, some shortcut
-- `<pre>` preformatted text, no space, tabs are ignores in it,
-  and also no line spaces are ignored. Use this for code blocks.
-- `<samp>` for output of a code, use this
-
-## Problem with modern web
-
-Here are some of my problems with modern web
-
-- content don't have focus, what you visited the site for, it's covered with ad's all over
-  and we can't focus on what we visited for. You can have ad's and also have focus over content.
-- useless java script for interactivity which no one needed, and it's often broken.
-- bad ui design and ux, no text hierarchy, excessive use of emoji,
-  unnecessary buttons, not enough spacing etc.
-- bad logic in forms, not everyone have a last name.
-- infinite scroll, please use pagination, or at least give a option for switching to it
-
-## Some Example
-
-So many people start making website to showcase how a minimal site should be:
+So many people start making website to showcase how a minimal site should be, here are some of them:
 
 - <https://motherfuckingwebsite.com> original
     - <http://bettermotherfuckingwebsite.com> ([source](https://github.com/wersimmon/BetterMotherfuckingWebsite-css))
@@ -80,4 +64,4 @@ So many people start making website to showcase how a minimal site should be:
     - <https://github.com/leonardothehuman/motherfuckingcms>
     - <https://justinjackson.ca/words.html> - sfw
 
-Also there are many webrings of site which are minimal.
+Also there are many webrings of minimal website, here is one - <https://512kb.club/>.

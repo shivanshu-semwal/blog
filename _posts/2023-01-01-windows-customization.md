@@ -3,54 +3,61 @@ title: Some windows customizations to improve workflow
 layout: post
 tags:
 - windows
+description: Modify windows for a better developer experience.
 ---
 
-## `debloat_windows()`
+Windows have many shortcomings for a developer, so here are some ways I deal with them.
 
-Many scripts are available for this purpose. This will remove the
-unnecessary software form your windows installation.
+{:toc}
 
-## `install_package_manger()`
+## Debloat Windows
 
-Install any one of these package manager, and when you
-want to install some software first check if it is available
+Windows have many programs that you never use and some cause distractions and annoying popup messages.
+For this many scripts are available which will remove the unnecessary software form your windows installation.
+
+## Install Package Manger
+
+Install any one of these package manager, and when you want to install some software first check if it is available
 in the package manager.
 
-- chocolatey
-    - [https://chocolatey.org/](https://chocolatey.org/)
-- scoop
-    - [https://scoop.sh/](https://scoop.sh/)
+- Chocolatey
+    - <https://chocolatey.org/>
+- Scoop
+    - <https://scoop.sh/>
 
-## `install_software()`
+## Install Software for missing functionalities
 
-- autohotkey
+- `autohotkey`
     - For making custom shortcuts
-    - [https://www.autohotkey.com/](https://www.autohotkey.com/)
-- copyQ
-    - Clipboard manager
-    - [https://hluk.github.io/CopyQ/](https://hluk.github.io/CopyQ/)
-- flameshot
-    - better screenshot tool
-    - [https://flameshot.org/](https://flameshot.org/)
-- audacious
-    - light weight music player
-    - [https://audacious-media-player.org/](https://audacious-media-player.org/)
-- mpv
-    - better video player
-    - [https://mpv.io/](https://mpv.io/)
-- vlc
+    - <https://www.autohotkey.com/>
+- `copyQ`
+    - Clipboard manager, better than windows clipboard manager
+    - <https://hluk.github.io/CopyQ/>
+- `flameshot`
+    - better screenshot tool, helps in annotation
+    - <https://flameshot.org/>
+- `audacious`
+    - light weight music player, if you want one
+    - <https://audacious-media-player.org/>
+- `mpv`
+    - better video player than windows one
+    - <https://mpv.io/>
+- `vlc`
     - video player, in case mpv fails
-    - [https://www.videolan.org/](https://www.videolan.org/)
-- sumatra pdf reader
+    - <https://www.videolan.org/>
+- `sumatra pdf reader`
     - light weight pdf reader
-    - [https://www.sumatrapdfreader.org/free-pdf-reader](https://www.sumatrapdfreader.org/free-pdf-reader)
-- libreoffice
+    - <https://www.sumatrapdfreader.org/free-pdf-reader>
+- `libreoffice`
     - for documents, presentations, and editing pdf
-    - [https://www.libreoffice.org/](https://www.libreoffice.org/)
+    - <https://www.libreoffice.org/>
 
-## `fix_desktop()`
+If you think some windows app is lacking something, there will always be some better alternative
+due to huge user base of windows.
 
-1. Create four desktops
+## Some virtual desktop switching capabilities (optional)
+
+1. Create four virtual desktops
 2. Install this script
    - [https://github.com/pmb6tz/windows-desktop-switcher](https://github.com/pmb6tz/windows-desktop-switcher) or
    - [Download it as zip](https://github.com/pmb6tz/windows-desktop-switcher/archive/refs/heads/master.zip)
@@ -86,19 +93,20 @@ This will add following shortcuts
 
 Put the `desktop_switcher.ahk` on the startup.
 
-> Here is a fun thing you can do now, suppose you want to drag and drop
-> certain file in browser to send it to your friend, open browser in
-> first desktop and explorer in another, now hold and drag the file
-> you want to send, and then press Start + 1, and you can now
-> drag and drop files between desktops more easily.
+Here is a simple use of this script, suppose you want to **drag and drop certain file in web browser**,
 
-## `fix_shortcuts()`
+- open browser in first desktop and
+- explorer in other desktop
+- now hold and drag the file you want to send, and then press Start + 1 to go to first desktop while holding file
+- now you can drag and drop files between desktops, which is not possible by default.
+
+## Add custom shortcuts
 
 Make another autohotkey file for this `shortcut.ahk` and add this to startup.
+In this script you can add you custom keyboard setting or you can block some windows keyboard settings.
 
 - Here is how you block certain annoying windows shortcuts
-    - Like `Start` + `c`, opens cortana,
-    which is annoying, you can add this to `shortcut.ahk` file
+    - Like `Start` + `c`, opens cortana, which is annoying, you can add this to `shortcut.ahk` file
 
 ```ahk
 ; stop cortana from opening
@@ -107,15 +115,15 @@ sleep 1
 return
 ```
 
-- We don't use `Capslock` that often, so i switched it with `Esc`
+- We don't use `Capslock` that often, so I switched it with `Esc`
 
 ```ahk
 ; switch capslock with esc key
 Capslock::Esc
 ```
 
-- We close windows many times, but the shortcut to close windows is
-  not that easy to press, so i changed it to `Start` + `Shift` + `q`
+- We close windows many times, but the shortcut to close windows is `Alt` + `F4`, which no sane person will
+  use repeatedly. So I changed it to `Start` + `Shift` + `q`
 
 ```ahk
 ; close a window
@@ -144,4 +152,6 @@ return
 return
 ```
 
-> Now you can shortcut to programs you open frequently.
+Similarly you can use shortcuts to open other programs.
+
+These are just a few suggestions to get you started; there are many more things that can be done to improve workflow.

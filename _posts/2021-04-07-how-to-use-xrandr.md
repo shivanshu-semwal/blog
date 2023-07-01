@@ -1,8 +1,9 @@
 ---
-title: How to use xrandr?
+title: How to use xrandr to set custom resolution?
 layout: post
 tags: 
    - linux
+description: Set custom resolution on linux using xrandr.
 ---
 
 `xrandr` is the tool to set the resolution on linux.

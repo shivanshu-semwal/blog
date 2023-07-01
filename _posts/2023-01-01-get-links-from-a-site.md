@@ -3,6 +3,7 @@ title: Extract all links from a site
 layout: post
 tags:
 - webdev
+description: How to download all links in a webpage in a text file.
 ---
 
 To extract all links form a website, you can run this code snippet in developer console of your browser.

@@ -3,13 +3,16 @@ title: Extract canvas from webpage
 layout: post
 tags:
 - webdev
+description: How to save canvas element as a image in browser.
 ---
 
-Use this code snippet in developer mode to download canvas as an image.
+Use this code snippet in developer mode to download `canvas` element as an image.
 
-```js
+```javascript
 function downloadCanvasAsImage(name){
-    let canvasImage = document.getElementById('pdfCanvas').toDataURL('image/png'); // get the canvas element
+    // get the canvas element, you have to change this with the element you want
+    let canvasImage = document.getElementById('pdfCanvas').toDataURL('image/png'); 
+    
     let xhr = new XMLHttpRequest();
     xhr.responseType = 'blob';
     xhr.onload = function () {
@@ -36,7 +39,8 @@ Here is how it works
 
 ## Other tricks
 
-Suppose a pdf is displayed as a series of canvas then you can download the entire pdf using this method. You need to add delay while using this for which you can use the `setTimeout()` method.
+Suppose a pdf is displayed as a series of canvas then you can download the entire pdf using this method.
+You need to add delay while using this (for the canvas to load completely) for which you can use the `setTimeout()` method.
 
 ```js
 function sleep(ms) {
@@ -44,17 +48,22 @@ function sleep(ms) {
 }
 
 async function downloadIt(){
- // get the end count
+    // get the end count, replace this with the one for site you are using
     x = parseInt(document.getElementById('page_count').textContent)
 
- // download image one by one
+    // download image one by one
     for(let i=0;i<x;i++){
         downloadCanvasAsImage('se' + i.toString());
+
+        // replace this with the next button on your site
         document.getElementById('next').click();
+
+        // wait for the image to load
         await sleep(500);
     }
 }
 downloadIt()
 ```
 
-You can use some tool to combine the image to one pdf file. Here is how I do it `convert *.png temp.pdf` using imagemigick.
+You can use some tool to combine the image to one pdf file.
+Here is how I do it `convert *.png temp.pdf` using `imagemagick`.

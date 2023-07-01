@@ -3,6 +3,7 @@ title: How to use image a thumbnail of folder
 layout: post
 tags: 
   - linux
+description: Make custom thumbnailer for dolphoin file manager.
 ---
 
 This post is specifically for dolphin file manager in linux.
@@ -11,13 +12,15 @@ So my goal was to achieve following:
 - have a image inside some folders with name `folder.jpg`
 - and display it as thumbnail of the folder
 
+## Setting up kenric
+
 For this I used [`keneric`](https://github.com/shivanshu-semwal/keneric).
 
 - First install `keneric`.
   This will create a shared library file `keneric.so` in `/usr/lib/x86_64-linux-gnu/qt5/plugins`
 - Now create a desktop file `kenericfolder.desktop` in one of the location given by
   command `kf5-config --path services`, which is `~/.local/share/kservices5`
-  or `/usr/share/kseervices5`
+  or `/usr/share/kseervices5` for me
 
 Content of `kenericfolder.desktop`
 
@@ -48,7 +51,6 @@ exportPicture="$3"
 
 # thumbnail options by mime type
 case "$mime" in
-
     inode/directory)
         cp "$fullname"/folder.jpg "$exportPicture"
         cp "$fullname"/Cover.png "$exportPicture"
@@ -60,12 +62,13 @@ case "$mime" in
     *)
         # case trap
     exit
-
 esac
 ```
 
-- Now open dolphin and open configure dolphin window.
-- Now in general category, in the Previous tab disable the Folder preview
+## Configuring dolphin
+
+- Now open dolphin -> open `Configure Dolphin...` window.
+- Now in `General` category, in the `Previews` tab disable the `Folder` preview
   and enable `Folders only one image (Keneric)` option.
 
 ## References

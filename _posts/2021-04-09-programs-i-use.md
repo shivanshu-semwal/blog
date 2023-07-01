@@ -3,6 +3,7 @@ title: Applications I use on linux
 layout: post
 tags:
   - linux
+description: List of applications I use on linux (2021).
 ---
 
 Everyone has a list of softwares they like, reasons might be their user interface or features.
