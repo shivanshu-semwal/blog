@@ -5,7 +5,7 @@ tags:
   - ffmpeg
 description: Fix unsupported video uploads in WhatsApp Web by re-encoding the file with supported codecs.
 image:
-  path: /assets/img/covers/fix-adding-file-not-supported-error-in-whatsapp-web-cover.png
+  path: /assets/img/posts/fix-adding-file-not-supported-error-in-whatsapp-web/cover.png
   alt: "Fix \"Adding File Not Supported\" Error in WhatsApp Web"
 ---
 

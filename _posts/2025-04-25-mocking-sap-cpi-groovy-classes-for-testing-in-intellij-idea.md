@@ -6,7 +6,7 @@ tags:
   - sap-cpi
 description: Create mock classes in IntelliJ to test Groovy code that depends on SAP CPI classes.
 image:
-  path: /assets/img/covers/mocking-sap-cpi-groovy-classes-for-testing-in-intellij-idea-cover.jpeg
+  path: /assets/img/posts/mocking-sap-cpi-groovy-classes-for-testing-in-intellij-idea/cover.jpeg
   alt: "Mocking SAP CPI Groovy Classes for Testing in IntelliJ Idea"
 ---
 

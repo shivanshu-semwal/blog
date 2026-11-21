@@ -6,7 +6,7 @@ tags:
   - linux
 description: A guide to font configuration, font directories, and fontconfig examples on Linux.
 image:
-  path: /assets/img/covers/how-to-configure-fonts-in-linux-cover.png
+  path: /assets/img/posts/how-to-configure-fonts-in-linux/cover.png
   alt: "How to Configure Fonts in Linux"
 ---
 

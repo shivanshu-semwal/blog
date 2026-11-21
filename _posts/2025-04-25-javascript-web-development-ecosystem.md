@@ -6,7 +6,7 @@ tags:
   - javascipt
 description: "A tour of the JavaScript ecosystem: tooling, frameworks, build systems, and testing libraries."
 image:
-  path: /assets/img/covers/javascript-web-development-ecosystem-cover.png
+  path: /assets/img/posts/javascript-web-development-ecosystem/cover.png
   alt: "Javascript Web Development Ecosystem"
 ---
 

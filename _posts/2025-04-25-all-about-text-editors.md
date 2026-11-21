@@ -5,7 +5,7 @@ tags:
   - text-editors
 description: A brief history of text editors, from punch cards and line editors to modern IDEs and collaborative tools.
 image:
-  path: /assets/img/covers/all-about-text-editors-cover.png
+  path: /assets/img/posts/all-about-text-editors/cover.png
   alt: "All about text editors"
 ---
 

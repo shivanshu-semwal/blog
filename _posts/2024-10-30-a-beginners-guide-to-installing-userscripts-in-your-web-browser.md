@@ -6,7 +6,7 @@ tags:
   - web-browser
 description: How to install and use userscripts safely in Chromium and Firefox.
 image:
-  path: /assets/img/covers/a-beginners-guide-to-installing-userscripts-in-your-web-browser-cover.png
+  path: /assets/img/posts/a-beginners-guide-to-installing-userscripts-in-your-web-browser/cover.png
   alt: "A Beginner's Guide to Installing Userscripts in Your Web Browser"
 ---
 

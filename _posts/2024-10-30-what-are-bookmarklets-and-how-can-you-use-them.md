@@ -6,7 +6,7 @@ tags:
   - bookmarklet
 description: A guide to bookmarklets and how to turn JavaScript into browser bookmarks.
 image:
-  path: /assets/img/covers/what-are-bookmarklets-and-how-can-you-use-them-cover.png
+  path: /assets/img/posts/what-are-bookmarklets-and-how-can-you-use-them/cover.png
   alt: "What Are Bookmarklets and How Can You Use Them?"
 ---
 

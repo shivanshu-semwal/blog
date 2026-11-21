@@ -19,7 +19,7 @@ In case the functionality you want to implement is not present in Standard Funct
 
 Here is a link to what kind of functionality can be achieved using groovy script and it's limitations in SAP CPI when compared to SAP PI/PO - [https://community.sap.com/t5/technology-blogs-by-members/cloud-integration-cpi-custom-functions-in-message-mapping-udf-and/ba-p/13500012](https://community.sap.com/t5/technology-blogs-by-members/cloud-integration-cpi-custom-functions-in-message-mapping-udf-and/ba-p/13500012)
 
-![Showing different types of scripting modes are supported in SAP CPI](/assets/img/sap-cpi-function-execution-modes.png)
+![Showing different types of scripting modes are supported in SAP CPI](/assets/img/posts/step-by-step-guide-using-groovy-scripts-in-sap-cpi-mappings/function-execution-modes.png)
 
 As you can in the above diagram that SAP CPI does not support the mode where you can take all values and then process them, instead you can take values one by one or you can take all values in context and process them. Sometimes for processing all values you can use `removeContext()` and then process all values in context, but this cannot be used if care about how values are stored in context.
 
