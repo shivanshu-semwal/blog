@@ -11,7 +11,7 @@ Here in this article, I will write the things I discover as I keep on using vim.
 
 ## Basics
 
-![basics.png](/assets/img/posts/move-to-vim-basics.png){: .left }
+![basics.png](/assets/img/posts/move-to-vim/basics.png){: .left }
  
 ## Insert Mode
 

@@ -7,7 +7,7 @@ tags:
   - sql
 description: Installing and securing MySQL on Ubuntu, including user setup and password recovery.
 image:
-  path: /assets/img/covers/installing-mysql-on-ubuntu-cover.png
+  path: /assets/img/posts/installing-mysql-on-ubuntu/cover.png
   alt: "Installing MySql on Ubuntu"
 ---
 

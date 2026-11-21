@@ -8,7 +8,7 @@ tags:
   - file-types
 description: A simple overview of file types, containers, codecs, and common media formats.
 image:
-  path: /assets/img/covers/exploring-different-file-types-a-simple-overview-cover.png
+  path: /assets/img/posts/exploring-different-file-types-a-simple-overview/cover.png
   alt: "Exploring Different File Types: A Simple Overview"
 ---
 
