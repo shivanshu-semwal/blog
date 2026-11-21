@@ -7,20 +7,23 @@ tags:
 description: Installing XAMPP for local PHP development on Linux.
 ---
 
-XAMPP is a popular PHP development environment. It stands for Apache + MariaDB + PHP + Perl.
 
-Follow these steps:
+XAMPP is a popular PHP development environment. It stands for - Apache + MariaDB + PHP + Perl.
 
-- Download the latest XAMPP binary for GNU/Linux.
-- Open a terminal, `cd` into the download directory, make the installer executable with `chmod +x`, and run it with `sudo`.
-- The installer installs the binaries under `/opt/lampp`.
-- Run `cd /opt/lampp; ls -all` to inspect the installation.
-- Important files include:
-  - `xampp`: main control binary
-  - `uninstall`: uninstall script
-  - `manager-linux-x64.run`: graphical manager
-  - `bin`: contains binaries for the services
-  - `configuration.ini`: service configuration
-- Start the servers and then open `localhost:80` in a browser.
+> Before following this guide read [https://www.apachefriends.org/faq_linux.html](https://www.apachefriends.org/faq_linux.html).
 
-Do not include `/opt/lampp` in `PATH`; use aliases or symlinks for specific binaries instead.
+Follow these steps to setup xamp on linux:
+
+- Download the latest version of `xampp` for GNU/Linux form here [https://www.apachefriends.org/index.html](https://www.apachefriends.org/index.html).
+- Open terminal, `cd` into the directory where the installer is, give execute permission for the installer using `chmod +x [filename]`, and then run the installer giving root permissions (`sudo`).
+- The installer will install the binaries in `/opt/lampp` directory.
+- Now run this command, `cd /opt/lampp; ls -all`, this will list files in `/opt/lampp` directory.
+- Some important files and directories in `/opt/lampp` are
+    - `xampp`, this is the main binary file for starting and stopping the server
+    - `uninstall`, this is the binary for uninstalling `xampp`
+    - `manager-linux-x64.run`, this is used for running the graphical interface, just run this in root privilege.
+    - `bin`, this directory contains the binaries for `mysql` `perl` `apache` ...
+    - `configuration.ini`, this file contains the setting for running the servers, if you want to change the configuration of the server, like port no, root directory, edit this file.
+- Once, you start the servers, either using `xampp` or `manager-linux-x64.run` (GUI), then go and open the `localhost:80` on browser.
+
+Don't include this directory in the `PATH` variable, just make aliases for some specific program you want, or softlink them in the `/usr/bin` directory. Otherwise it may conflict with system software.

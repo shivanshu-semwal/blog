@@ -7,6 +7,7 @@ tags:
 description: A practical guide to parsing and transforming XML using Groovy.
 ---
 
+
 ## Introduction
 
 To parse xml in groovy there are two options available

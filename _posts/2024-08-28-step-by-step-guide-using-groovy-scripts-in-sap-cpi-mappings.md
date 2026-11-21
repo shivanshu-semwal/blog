@@ -8,14 +8,6 @@ tags:
 description: An overview of Groovy scripting in SAP CPI mappings and how to structure the scripts.
 ---
 
----
-title: "Step-by-Step Guide: Using Groovy Scripts in SAP CPI Mappings"
-datePublished: Wed Aug 28 2024 08:19:03 GMT+0000 (Coordinated Universal Time)
-cuid: cm0dl4bd5000109l4f0031k77
-slug: step-by-step-guide-using-groovy-scripts-in-sap-cpi-mappings
-tags: groovy, sap, sap-cpi
-
----
 
 In SAP CPI when you use mappings to transform xml from one structure to another structure. While transforming you can perform operations on the elements, like splitting and concatenating and changing their format. Some of these functionality is provided itself by SAP CPI, but if you want some new functionality you can utilize a groovy function block there.
 

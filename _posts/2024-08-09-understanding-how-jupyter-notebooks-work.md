@@ -7,6 +7,7 @@ tags:
 description: A quick overview of how Jupyter notebooks, kernels, and the IPython protocol interact.
 ---
 
+
 Main focus of this blog is the youtube video - [Jupyter: Kernels, Protocols, and the IPython Reference Implementation](https://www.youtube.com/watch?v=GExKsQ-OU78&t=189s).
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/GExKsQ-OU78?si=qYZT4dV2_ETKnoMS"></iframe>

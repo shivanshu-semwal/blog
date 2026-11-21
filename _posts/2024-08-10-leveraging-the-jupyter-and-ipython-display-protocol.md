@@ -7,6 +7,7 @@ tags:
 description: Using IPython rich display protocol methods like _repr_html_ and _repr_png_.
 ---
 
+
 In python for every object you create there is a `__repr__` method in it which is used to display it wherever you print that variable.
 
 ```python

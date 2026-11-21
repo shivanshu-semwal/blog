@@ -8,12 +8,16 @@ tags:
 description: Set a folder image as the thumbnail in Dolphin using Keneric.
 ---
 
-This post is specifically for the Dolphin file manager in KDE. The goal was to have an image inside a folder, named `folder.jpg`, and have it displayed as the folder thumbnail.
 
-For this I used `keneric`.
+This post is specifically for dolphin file manager in KDE. So my goal was to achieve following:
 
-- Install `keneric`; it creates a shared library file `keneric.so`.
-- Create a desktop file named `kenericfolder.desktop` in a KService location such as `~/.local/share/kservices5`.
+- have a image inside some folders with name `folder.jpg`
+- and display it as thumbnail of the folder
+
+For this I used [`keneric`](https://github.com/shivanshu-semwal/keneric).
+
+- Install `keneric`. This will create a shared library file `keneric.so` in `/usr/lib/x86_64-linux-gnu/qt5/plugins`
+- Now create a desktop file `kenericfolder.desktop` in one of the location given by command `kf5-config --path services`. For me it was `~/.local/share/kservices5` and  `/usr/share/kseervices5`. Content of `kenericfolder.desktop`:
 
 ```ini
 [Desktop Entry]
@@ -28,7 +32,7 @@ X-KDE-Library=keneric
 CacheThumbnail=true
 ```
 
-- Create a script named `stripPicture` in a directory in `$PATH`.
+- Now create a script `stripPicture` in one of the locations in your `$PATH` variable. Contents of `stripPicture`: 
 
 ```sh
 #!/bin/sh
@@ -38,6 +42,7 @@ fullname="$1"
 mime="$2"
 exportPicture="$3"
 
+# thumbnail options by mime type
 case "$mime" in
     inode/directory)
         cp "$fullname"/folder.jpg "$exportPicture"
@@ -48,12 +53,15 @@ case "$mime" in
     ;;
 
     *)
+        # case trap
     exit
 esac
 ```
 
-Then open Dolphin, go to `Configure Dolphin`, and under `General > Previews` enable the relevant folder thumbnail setting.
+- Now open dolphin -> open `Configure Dolphin...` window.
+- Inside `General` category, in the `Previews` tab disable the `Folder` preview
+  and enable `Folders only one image (Keneric)` option.
 
 ## References
 
-- KDE forum thread on folder thumbnails
+- [https://forum.kde.org/viewtopic.php?f=224&t=156241](https://forum.kde.org/viewtopic.php?f=224&t=156241)

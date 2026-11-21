@@ -6,10 +6,13 @@ tags:
 description: A quick test post to try out markdown features on the blog.
 ---
 
+
 Hello this is a test blog, and here I will test all the markdown features offered by this platform.
 
-* this is list
-* another item
+*   this is list
+    
+*   another item
+    
 
 ```c
 #include <stdio.h>
@@ -24,7 +27,9 @@ int main(){
 | this | is | a |
 | table |  |  |
 
-1. this is ordered list
-2. nice
+1.  this is ordered list
+    
+2.  nice
+    
 
 > this is a block quote
