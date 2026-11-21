@@ -1,0 +1,15 @@
+- type: github
+  icon: "fab fa-github"
+  url: "https://github.com/shivanshu-semwal"
+
+- type: linkedin
+  icon: "fab fa-linkedin"
+  url: "https://www.linkedin.com/in/shivanshu-semwal"
+
+- type: twitter
+  icon: "fab fa-twitter"
+  url: "https://twitter.com/shivanshusemwal"
+
+- type: rss
+  icon: "fas fa-rss"
+  noblank: true

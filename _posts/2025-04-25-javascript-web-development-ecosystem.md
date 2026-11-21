@@ -4,7 +4,7 @@ layout: post
 tags:
   - web-development
   - javascipt
-description: A tour of the JavaScript ecosystem: tooling, frameworks, build systems, and testing libraries.
+description: "A tour of the JavaScript ecosystem: tooling, frameworks, build systems, and testing libraries."
 ---
 
 JavaScript is at the heart of the modern web. From single-page applications to full-stack solutions, the ecosystem is huge.

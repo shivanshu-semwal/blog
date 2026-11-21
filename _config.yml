@@ -1,29 +1,76 @@
-title: ~/tblog
-author:
-  name: Shivanshu Semwal
-  email: semwalshivanshu.com
+theme: jekyll-theme-chirpy
 
-# The `>` after `description:` means to ignore line-breaks until next key.
-# If you want to omit the line-break after the end of text, use `>-` instead.
-description: >
+lang: en
+timezone: Asia/Kolkata
+
+title: ~/tblog
+tagline: Notes on code, Linux, and building useful things.
+description: >-
   Shivanshu, crafting code to create solutions and a better tomorrow.
 
-theme: minima
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-paginate
-minima:
-  social_links:
-     - { platform: github,         user_url: "https://github.com/shivanshu-semwal" }
-     - { platform: instagram,      user_url: "https://portfolio.pixelfed.social/totoro" }
-     - { platform: linkedin,       user_url: "https://www.linkedin.com/in/shivanshu-semwal" }
-     - { platform: twitter,        user_url: "https://twitter.com/shivanshusemwal" }
-  skin: auto
+url: "https://shivanshu-semwal.github.io"
+baseurl: ""
 
-header_pages:
-  - tags.md
+github:
+  username: shivanshu-semwal
+
+twitter:
+  username: shivanshusemwal
+
+social:
+  name: Shivanshu Semwal
+  email: semwalshivanshu.com
+  links:
+    - "https://github.com/shivanshu-semwal"
+    - "https://www.linkedin.com/in/shivanshu-semwal"
+    - "https://twitter.com/shivanshusemwal"
+    - "https://portfolio.pixelfed.social/totoro"
+
+theme_mode:
+toc: true
+
+comments:
+  provider:
 
 paginate: 10
-paginate_path: "/blog/page:num/"
-home: https://shivanshu-semwal.github.io/
+paginate_path: "/page:num/"
+
+permalink: /:year/:month/:day/:title.html
+
+plugins:
+  - jekyll-archives
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+collections:
+  tabs:
+    output: true
+    sort_by: order
+
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layouts:
+    category: category
+    tag: tag
+  permalinks:
+    category: /categories/:name/
+    tag: /tags/:name/
+
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      comments: false
+      toc: true
+  - scope:
+      path: ""
+      type: tabs
+    values:
+      layout: page
+      permalink: /:title/
