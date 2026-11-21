@@ -9,7 +9,7 @@ description: >-
   Shivanshu, crafting code to create solutions and a better tomorrow.
 
 url: "https://shivanshu-semwal.github.io"
-baseurl: ""
+baseurl: "/blog"
 
 github:
   username: shivanshu-semwal
