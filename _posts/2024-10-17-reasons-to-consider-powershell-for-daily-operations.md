@@ -6,13 +6,16 @@ tags:
 description: Why PowerShell is a practical tool for automation and repetitive file operations.
 ---
 
-Here is the situation: you are attempting to copy a large file using File Explorer, but it takes a long time before the copy even starts. This delay happens because Explorer is calculating all the details first.
 
-CLI tools are often more reliable than GUI tools, and commands are easier to automate.
+Here’s the situation: you’re attempting to copy a large file using File Explorer, but it’s taking a long time even before the copying begins. This delay occurs because Explorer calculates certain information about the files to provide an accurate progress bar, which can lead to wasting over a minute when dealing with large files.
 
-## Some tricks and tips
+Additionally, if you want to remove all zip files from a folder, doing it through Explorer requires more manual effort compared to using a single command. While you could achieve this in another programming language, the time spent switching contexts would be greater since you'd need to write, test, and execute a script.
 
-### Create a new file from the contents of the clipboard
+Moreover CLI’s are more reliable than GUI’s and if you do something in a CLI then there is a better chance that you can automate that easily.
+
+## Some tricks and tips!
+
+### Create a new file from contents of clipboard
 
 ```powershell
 Get-Clipboard | Out-File -FilePath "file_path"
@@ -21,13 +24,13 @@ Get-Clipboard | Out-File -FilePath "file_path"
 Get-Clipboard | Out-File -FilePath "code.py"
 ```
 
-### Copy files from one location to another
+### Copy files form one location to another
 
 ```powershell
-# single item
+# for single item
 Copy-Item -Path "source_path" -Destination "destination_path"
 
-# multiple items
+# for multiple items
 Copy-Item -Path "C:\source\*.txt" -Destination "C:\destination\"
 
 # copy folder
@@ -35,6 +38,9 @@ Copy-Item -Path "C:\source\folder" -Destination "C:\destination\folder" -Recurse
 
 # overwrite
 Copy-Item -Path "C:\source\file.txt" -Destination "C:\destination\file.txt" -Force
+
+# overwrite but ask first
+Copy-Item -Path "C:\source\file.txt" -Destination "C:\destination\file.txt" -Confirm
 ```
 
 ### Move files and folders
@@ -48,24 +54,53 @@ Move-Item -Path "C:\source\*.txt" -Destination "C:\destination\"
 
 # folder
 Move-Item -Path "C:\source\folder" -Destination "C:\destination\folder"
+
+# overwrite
+Move-Item -Path "C:\source\file.txt" -Destination "C:\destination\file.txt" -Force
+
+# overwrite but ask first
+Move-Item -Path "C:\source\file.txt" -Destination "C:\destination\file.txt" -Confirm
 ```
 
-### Delete files
+### Delete files (will permanently delete files)
 
 ```powershell
+# single item
 Remove-Item -Path "file_path"
+
+# folder
 Remove-Item -Path "C:\path\to\folder" -Recurse
+
+# force
 Remove-Item -Path "C:\path\to\file.txt" -Force
+
+# ask before deleting
+Remove-Item -Path "C:\path\to\file.txt" -Confirm
 ```
 
-### Find files with a particular extension and move them
+### Find all files with particular extension in a folder and move them to one place
 
 ```powershell
-Get-ChildItem -Path "source_dir" -Recurse -Filter *.zip |
+Get-ChildItem -Path "source_dir" -Recurse -Filter *.zip | 
     Move-Item -Destination "destination_dir" -Force
+```
+
+### Delete Items (move to recycle bin)
+
+```powershell
+# TODO
+```
+
+### Create new image from image copied to clipboard like when you take screenshot
+
+```powershell
+# todo
 ```
 
 ## References
 
-* PowerShell docs
-* PowerShell blog
+* [https://learn.microsoft.com/en-us/powershell/](https://learn.microsoft.com/en-us/powershell/)
+    
+* [https://devblogs.microsoft.com/powershell-community/](https://devblogs.microsoft.com/powershell-community/)
+    
+* [https://devblogs.microsoft.com/powershell-community/cheat-sheet-console-experience/](https://devblogs.microsoft.com/powershell-community/cheat-sheet-console-experience/)
