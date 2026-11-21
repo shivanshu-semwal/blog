@@ -1,5 +1,5 @@
 ---
-title: "Fix "Adding File Not Supported" Error in WhatsApp Web"
+title: 'Fix "Adding File Not Supported" Error in WhatsApp Web'
 layout: post
 tags:
   - ffmpeg
